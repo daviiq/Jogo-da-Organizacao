@@ -8,9 +8,10 @@ public enum Habito {
     HABITOS_RUINS(-300),
     ESTUDO_INCORRETO(-200);
 
-    private final int xp;
+    //Cria o XP para cada habito
+    private int xp;
+    Habito(int xp) {this.xp = xp;}
 
-    habito(int xp ) {this.xp = xp;}
-
-    public int getXp() {return xp;}
+    //Pega o XP
+    public int getXp() {return this.xp;}
 }
