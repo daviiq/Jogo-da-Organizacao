@@ -1,27 +1,16 @@
-import java.util.Scanner;
 import java.awt.*;
 import javax.swing.*;
 
-public class JogoOrganizacao {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+public class JogoOrganizacao extends JFrame {
 
-        HistoricoService historico;
+    public JogoOrganizacao() {
+        super("Jogo da Organização");
 
-        //Definição da Janela do Jogo:
-        JFrame janelaJogo = new JFrame("Bem Vindo ao Jogo da Evolução");
-        janelaJogo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(800, 600);
+        setLayout(new FlowLayout());
 
-        //Tamanho da tela
-        janelaJogo.setSize(1920, 1080);
-
-        //Layout da tela:
-        janelaJogo.setLayout(new FlowLayout());
-
-        //Deixa ela visivel:
-        janelaJogo.setVisible(true);
-
-        System.out.println("digite o seu nome: ");
-        String resposta = scanner.nextLine();
+        JLabel texto = new JLabel("Bem-vindo ao Jogo da Organização!");
+        add(texto);
     }
 }

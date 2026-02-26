@@ -7,12 +7,6 @@ public class HistoricoService {
     private List<HistoricoDia> historico = new ArrayList<>();
     private List<Jogador> historicoJogadores = new ArrayList<>();
 
-    //adiciona o jogador ao histórico
-    public void adcionarJogador(Jogador jogador) {
-        Jogador jogador1 = new Jogador(0,0, jogador.getNome());
-        historicoJogadores.add(jogador1);
-    }
-
 
     //Salva o que foi feito no dia:
     public void salvarDia(int xpGanho) {

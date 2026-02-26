@@ -38,5 +38,4 @@ public class Jogador {
 
     public int getLevel() {return level;}
     public int getXpTotal() {return xpTotal;}
-
 }
