@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        JFrame janelaPrincipal = new JFrame("Bem Vindo ao Jogo da Evolução");
+        JFrame janelaPrincipal = new JFrame("Menu Principal");
         janelaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janelaPrincipal.setSize(800, 600);
         janelaPrincipal.setLayout(new FlowLayout());
