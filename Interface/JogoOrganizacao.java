@@ -11,7 +11,7 @@ public class JogoOrganizacao extends JFrame {
 
         // 1. Nomes das colunas (String[])
         String[] colunas = {"Atividade", "Dia da Semana", "Realizado?"};
-        DefaultTableModel modelo = new DefaultTableModel(colunas,0); //Cria uma tabela padrão;
+        DefaultTableModel modelo = new DefaultTableModel(colunas,7); //Cria uma tabela padrão;
 
         // 2. Criação da JTable
         JTable tabela = new JTable(modelo);
