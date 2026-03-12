@@ -1,51 +1,46 @@
-📋 Jogo da Organização
+📋 JOGO DA ORGANIZAÇÃO
 
-Projeto desenvolvido em Java com Swing que simula um pequeno sistema de organização de jogos utilizando uma interface gráfica simples.
-O objetivo do projeto é praticar conceitos de programação orientada a objetos, interface gráfica e manipulação de tabelas em Java.
+Sistema desenvolvido em Java utilizando Swing para criar uma interface gráfica simples voltada para a organização de jogos em uma tabela.
 
-🎮 Sobre o Projeto
+Este projeto foi criado com objetivo de praticar conceitos de programação orientada a objetos, interfaces gráficas e manipulação de componentes do Java Swing.
 
-O Jogo da Organização é uma aplicação desktop que permite organizar jogos dentro de uma interface gráfica.
+🚀 SOBRE O PROJETO
 
-A aplicação utiliza componentes do Swing, como:
+O Jogo da Organização é uma aplicação desktop que permite visualizar e organizar jogos dentro de uma interface gráfica.
 
-JFrame
+O sistema utiliza componentes clássicos do Swing, como:
 
-JTable
+- JFrame
 
-JComboBox
+- JTable
 
-DefaultTableModel
+- JComboBox
 
-O projeto foi criado com foco em aprendizado, explorando conceitos importantes de desenvolvimento em Java.
+Este projeto tem foco educacional, sendo utilizado para aprendizado e prática durante os estudos de programação.
 
-🧰 Tecnologias Utilizadas
+🛠 TECNOLOGIAS UTILIZADAS
 
-☕ Java
+- ☕ Java
 
-🖼 Java Swing
+- 🖼 Java Swing
 
-💻 IntelliJ IDEA (ou qualquer IDE Java)
+- 💻 IntelliJ IDEA (ou outra IDE Java)
 
-🖥 Interface do Projeto
+- 🖥 INTERFACE DO PROJETO
 
-(Aqui você pode adicionar prints do sistema depois)
+Você pode adicionar imagens da interface aqui futuramente.
 
 Exemplo:
 
-/imagens/interface.png
-
-Depois no README:
-
 ![Interface do sistema](imagens/interface.png)
-⚙️ Como Executar o Projeto
-1️⃣ Clonar o repositório
+⚙️ COMO EXECUTAR O PROJETO
+1️⃣ CLONAR O REPOSITÓRIO
 git clone https://github.com/daviiq/Jogo-da-Organizacao.git
-2️⃣ Acessar a pasta do projeto
+2️⃣ ACESSAR A PASTA DO PROJETO
 cd Jogo-da-Organizacao
-3️⃣ Abrir em uma IDE Java
+3️⃣ ABRIR EM UMA IDE JAVA
 
-Você pode abrir com:
+Você pode utilizar:
 
 IntelliJ IDEA
 
@@ -53,4 +48,4 @@ Eclipse
 
 NetBeans
 
-VSCode (com extensão Java)
+VSCode com extensão Java
