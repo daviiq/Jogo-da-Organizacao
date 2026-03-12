@@ -31,9 +31,9 @@ public class Jogador {
         }
     }
 
-    //Cria o aumnto do limite para o Próximo Level
+    //Cria o aumento do limite para o Próximo Level
     public int xpParaProximoLevel() {
-        return 500 + (level - 1 ) * 700;
+        return 1000 + (level - 1 ) * 700;
     }
 
     public int getLevel() {return level;}
