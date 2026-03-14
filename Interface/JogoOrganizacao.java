@@ -5,15 +5,18 @@ import javax.swing.table.DefaultTableModel;
 public class JogoOrganizacao extends JFrame {
     private Jogador jogador;
     private BarraDeProgresso barraXP;
+    private JLabel labelLevel;
 
 
     public JogoOrganizacao() {
         super("Jogo da Organização");
 
         //Instâncias
-        jogador = new Jogador(1,0,"Jogador");
+        jogador = new Jogador(1,0,"Jogador",1);
         setLayout(new BorderLayout());
         JFrame frame = new JFrame("Jogo da Organização");
+        labelLevel = new JLabel("Level Atual: " + jogador.getLevel(), SwingConstants.CENTER);
+        labelLevel.setFont(new Font("Arial",Font.BOLD,18));
 
         // 1. Nomes das colunas (String[])
         String[] colunas = {"Atividade", "Dia da Semana", "Realizado?"};
@@ -57,6 +60,7 @@ public class JogoOrganizacao extends JFrame {
                                 jogador.getXpTotal(),
                                 jogador.xpParaProximoLevel()
                         );
+                        labelLevel.setText("Level Atual: " + jogador.getLevel());
                     }
                 }
             }
@@ -97,8 +101,14 @@ public class JogoOrganizacao extends JFrame {
         //Cria a tabela no centro
         add(new JScrollPane(tabela), BorderLayout.CENTER);
 
+
+
         //Cria a barra de progesso na parte debaixo da página:
-        add(barraXP,BorderLayout.SOUTH);
+        JPanel painelInferior = new JPanel(new BorderLayout());
+        painelInferior.add(labelLevel, BorderLayout.NORTH);
+        painelInferior.add(barraXP, BorderLayout.SOUTH);
+        add(painelInferior,BorderLayout.SOUTH);
+
 
         //Especificações da página
         setSize(600, 500);

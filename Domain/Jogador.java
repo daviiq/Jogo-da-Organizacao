@@ -1,15 +1,19 @@
+import javax.swing.*;
+
 public class Jogador {
 
     //Caracteristicas do Jogador
     private int level = 1;
     private int xpTotal = 0;
     private String nome;
+    private int id;
 
     //Constructor:
-    public Jogador(int level, int xpTotal, String nome) {
+    public Jogador(int level, int xpTotal, String nome, int id) {
         this.level = level;
         this.xpTotal = xpTotal;
         this.nome = nome;
+        this.id = id;
     }
 
     //Pega o nome do jogador:
@@ -27,6 +31,12 @@ public class Jogador {
     public void verificarLevelUp() {
         while (xpTotal >= level * 1000) {
             level++;
+
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Level UP! Nível atual: " + level, "Parabéns",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
             System.out.println("LEVEL UP ! Nível atual é: " + level);
         }
     }
