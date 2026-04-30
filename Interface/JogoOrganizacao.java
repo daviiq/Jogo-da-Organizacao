@@ -14,7 +14,6 @@ public class JogoOrganizacao extends JFrame {
         //Instâncias
         jogador = new Jogador(1,0,"Jogador",1);
         setLayout(new BorderLayout());
-        JFrame frame = new JFrame("Jogo da Organização");
         labelLevel = new JLabel("Level Atual: " + jogador.getLevel(), SwingConstants.CENTER);
         labelLevel.setFont(new Font("Arial",Font.BOLD,18));
 
